@@ -1,5 +1,10 @@
 var x = window.prompt("enter the date to start the timer: ");
 
+if(x==0){
+    alert('please enter a valid date');
+    location.reload() ;
+}
+
 const enddate = x;
 document.getElementById("edit").innerText = enddate;
 
